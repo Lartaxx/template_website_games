@@ -63,7 +63,7 @@ elseif($steamprofile['personastate'] == 3) {
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <a href="index.html" class="logo mr-auto"><img src="assets/img/Logo_noir_sanstexte.png" alt="" class="img-fluid"></a>
+      <a href="index.html" class="logo mr-auto"><img src="assets/img/gmod.png" alt="" class="img-fluid"></a>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -99,7 +99,7 @@ elseif($steamprofile['personastate'] == 3) {
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <img src="assets/img/Logo_noir_sanstexte.png" width="100" height="100" />
+          <img src="assets/img/gmod.png" width="100" height="100" />
           <h2><?php echo $text; ?> <?php echo $steamprofile['realname']; ?> !</h2>
           <div class="d-flex">
             <a href="" class="btn-get-started scrollto">Rejoindre le serveur</a>
@@ -107,7 +107,7 @@ elseif($steamprofile['personastate'] == 3) {
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src="assets/img/Logo_ca.png" class="img-fluid animated" alt="">
+          <img src="assets/img/gmod.png" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
