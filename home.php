@@ -80,8 +80,8 @@ elseif($steamprofile['personastate'] == 3) {
                 </ul>
               </li>
               <li><a href="?update">Mise à jour</a></li>
+              <li><a href="?logout">Déconnexion</a></li>
             </ul>
-            <li><a href="?logout">Déconnexion</a></li>
           </li>
           <li><a href="#contact">Contact</a></li>
           <li><img src="<?php echo $steamprofile['avatar']; ?>" class="r" /></li>
