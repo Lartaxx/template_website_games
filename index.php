@@ -1,4 +1,6 @@
-<?php require_once('./assets/php/gameq.php'); ?>
+<?php require_once('./assets/php/gameq.php');
+      require ('./assets/vendor/steam/steamauth/steamauth.php');
+?>
 <!DOCTYPE html>
 <html lang="fr-FR">
 
@@ -38,16 +40,11 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html">As you would</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <a href="index.html" class="logo mr-auto"><img src="assets/img/gmod.png" alt="" class="img-fluid"></a>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#header">Accueil</a></li>
-          <li><a href="#about">+ sur nous</a></li>
-          <li><a href="#services">Notre serveur</a></li>
-          <li><a href="#team">Notre équipe</a></li>
           <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -66,6 +63,7 @@
             </ul>
           </li>
           <li><a href="#contact">Contact</a></li>
+          <li><?php loginbutton('rectangle'); ?></li>
         </ul>
       </nav><!-- .nav-menu -->
       
@@ -80,8 +78,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>As you would</h1>
-          <h2>Rejoignez les <?php echo $players; ?> joueurs en lignes</h2>
+          <img src="assets/img/gmod.png" width="100" height="100" />
+          <h2>Votre serveur ! Votre site !</h2>
           <div class="d-flex">
             <a href="<?php echo $link; ?>" class="btn-get-started scrollto">Rejoindre le serveur</a>
             <a href="" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Visionner notre trailer <i class="icofont-play-alt-2"></i></a>
@@ -451,7 +449,7 @@
               echo '<span class="open-blink"></span><span style="color: white; background-color: #4caf50; padding-left: 5px; padding-right: 5px; padding-bottom:5px; padding-top:5px; border-radius: 3px; height: 5px; width: 20px;">Serveur ouvert ! ('.$players.'/'.$maxplayers.')</span>';
             }   
             else {
-              echo '<span class="close-blink"></span><span style="color: white; background-color: #af001b; padding-left: 5px; padding-right: 5px; padding-bottom:5px; padding-top:5px; border-radius: 3px; height: 5px; width: 20px;">Serveur fermé !</span>';
+              echo '<span class="close-blink"></span>&nbsp;&nbsp;&nbsp;<span style="color: white; background-color: #af001b; padding-left: 5px; padding-right: 5px; padding-bottom:5px; padding-top:5px; border-radius: 3px; height: 5px; width: 20px;">Serveur fermé !</span>';
             }
             ?>
             </div>

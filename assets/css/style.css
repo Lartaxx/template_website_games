@@ -1559,3 +1559,14 @@ a:hover {
   cursor: pointer;
 }
 
+.be {
+  background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 33%, rgba(249,242,16,1) 61%, rgba(226,23,23,1) 92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.r {
+  border-radius: 50px;
+}
+
