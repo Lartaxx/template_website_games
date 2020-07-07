@@ -48,7 +48,7 @@
 		b: "bottom",
 		l: "left",
 		c: "center",
-		r: "right"
+		r: "right", 
 	};
 	var hAligns = ["l", "c", "r"];
 	var vAligns = ["t", "m", "b"];

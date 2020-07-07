@@ -4,15 +4,10 @@ include './assets/vendor/steam/steamauth/userInfo.php';
 $steamprofile['lastlogoff'] = date('d/m/Y', $steamprofile['lastlogoff']); 
 $heure = date('H');
 
-if($heure < 18 && $heure > 5 ) {
-    $text = "Bonjour ";
-}
-else {
-    $text = "Bonsoir ";
-}
+if($heure < 18 && $heure > 5 ) { $text = "Bonjour "; } else { $text = "Bonsoir "; }
 
 if(!isset($_SESSION['steamid'])) {
-    die;
+    header('Location: index.php');
 }
 if($steamprofile['personastate'] == 1) {
     $steamprofile['personastate'] = '<span style="color: green;">En Ligne</span>';

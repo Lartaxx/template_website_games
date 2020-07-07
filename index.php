@@ -495,6 +495,7 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/notify.js"></script>
   <script src="assets/js/mailer.js"></script>
+  <script src="assets/js/language.js"></script>
 </body>
 
 </html>
